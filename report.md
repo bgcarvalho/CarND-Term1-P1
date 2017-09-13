@@ -3,7 +3,7 @@
 ## Term 1 - Project 1
 
 
-**Introduction**
+### Introduction
 
 The goal of this project is to create pipeline that finds lane 
 lines on the road in images and in video stream, and finally present
@@ -14,11 +14,11 @@ the work in a written a report.
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 
-[image01]: ./output_images/2_1_grayscale.png
+[image01]: ./output_images/2_1_grayimage.png
 [image02]: ./output_images/2_2_gradient.png
 [image03]: ./output_images/2_3_masked.png
 [image04]: ./output_images/2_4_mask_in_red.png
-[image05]: ./output_images/2_5_mask_red_continous.png
+[image05]: ./output_images/2_5_mask_red_continuous.png
 [image06]: ./output_images/2_6_final.png
 
 
@@ -67,17 +67,17 @@ avoid the lines spreading throughout the image.
 
 ### Pipeline shortcomings
 
-The pipeline implemented for the work may not work for different environment
-conditions. It is probable that in rainy or at night the algorithm fails.
+The pipeline implemented for this work may not work for different environment
+conditions. It is possible that in rainy or at night the algorithm fails.
 Variation in lightining and trepidation are important aspects of edge detection.
 A different position of the camera on the car and its alignment with the road
-require modifications in the code.
+would require modifications in the code.
 
 ### Possible improvements
 
-From the video stream output is possible to see great variation in the results
+From the video stream output is possible to see abrupt variation in the results
 from frame to frame. One possible improvement would be to compare one frame
-to the previous, smothing the transintion in slope for each calcultion.
+to the previous, smothing the transition in slope for each calculation.
 
 Another improvement possible is apply a higher contrast right after the 
 grayscale convertion.
